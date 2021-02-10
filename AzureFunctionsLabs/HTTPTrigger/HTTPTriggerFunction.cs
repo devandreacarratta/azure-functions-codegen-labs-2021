@@ -11,6 +11,9 @@ namespace AzureFunctionsLabs
 {
     public static class HTTPTriggerFunction
     {
+        // How to disable an EndPoint (Italian link)
+        // https://blog.devandreacarratta.it/azure-function-endpoint-disable-attribute/
+        [Disable]
         [FunctionName("HTTPTriggerFunction")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
