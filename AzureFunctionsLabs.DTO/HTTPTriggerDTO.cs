@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AzureFunctionsLabs.DTO
+﻿namespace AzureFunctionsLabs.DTO
 {
     public class HTTPTriggerDTO
     {

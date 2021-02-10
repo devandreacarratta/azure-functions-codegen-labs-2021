@@ -31,7 +31,7 @@ namespace AzureFunctionsLabs
                         QueueName = config["queuename"],
                         SecondToWaitBeforeTrigger = Convert.ToInt32(config["SecondToWaitBeforeTrigger"]),
                     }
-                ) ;
+                );
 
             builder.Services.AddSingleton<BlobConfigurationDTO>
                 (

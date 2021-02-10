@@ -9,7 +9,6 @@
     "ComputeLinesNumber": "true",
     "ShowLenght": "true",
     "LogDateTimeUTC": "true",
-    "SecondToWaitBeforeTrigger":  10
-
+    "SecondToWaitBeforeTrigger": 10
   }
 }

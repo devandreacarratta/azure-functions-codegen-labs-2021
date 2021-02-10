@@ -28,7 +28,6 @@ namespace AzureFunctionsLabs
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-
             // { "FreeText" :"Hello World from PostMan API"}
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();

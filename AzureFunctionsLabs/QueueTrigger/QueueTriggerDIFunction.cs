@@ -13,7 +13,6 @@ namespace AzureFunctionsLabs
             _dto = dto;
         }
 
-
         [FunctionName("QueueTriggerDIFunction")]
         public static void Run([QueueTrigger("messages", Connection = "queueconnectionstring")] string myQueueItem, ILogger log)
         {

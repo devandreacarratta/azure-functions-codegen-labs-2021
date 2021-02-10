@@ -4,6 +4,5 @@
     {
         public bool ComputeLinesNumber { get; set; }
         public bool ShowLenght { get; set; }
-
     }
 }

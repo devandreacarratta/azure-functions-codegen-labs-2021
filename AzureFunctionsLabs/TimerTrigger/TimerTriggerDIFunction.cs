@@ -1,7 +1,7 @@
-﻿using System;
+﻿using AzureFunctionsLabs.DTO;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
-using AzureFunctionsLabs.DTO;
+using System;
 
 namespace AzureFunctionsLabs
 {
@@ -17,9 +17,8 @@ namespace AzureFunctionsLabs
             _dto = dto;
         }
 
-
         [FunctionName("TimerTriggerDIFunction")]
-        public  void Run([TimerTrigger("0 */10 * * * *")] TimerInfo myTimer, ILogger log)
+        public void Run([TimerTrigger("0 */10 * * * *")] TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
         }

@@ -1,7 +1,6 @@
-using System;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
+using System;
 
 namespace AzureFunctionsLabs
 {
@@ -11,7 +10,7 @@ namespace AzureFunctionsLabs
         // https://blog.devandreacarratta.it/azure-function-timertrigger-cron-value-utc/
 
         [FunctionName("TimerTriggerFunction")]
-        public static void Run([TimerTrigger("0 */5 * * * *")]TimerInfo myTimer, ILogger log)
+        public static void Run([TimerTrigger("0 */5 * * * *")] TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
         }
