@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace AzureFunctionsLabs
 {
-    public static class Function1
+    public static class HTTPTriggerFunction
     {
-        [FunctionName("Function1")]
+        [FunctionName("HTTPTriggerFunction")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
