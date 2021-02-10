@@ -6,7 +6,7 @@ namespace AzureFunctionsLabs
     public static class QueueTriggerFunction
     {
         [FunctionName("QueueTriggerFunction")]
-        public static void Run([QueueTrigger("messages", Connection = "queueconnectionstring")] string myQueueItem, ILogger log)
+        public static void Run([QueueTrigger("messages-fake", Connection = "queueconnectionstring")] string myQueueItem, ILogger log)
         {
             log.LogInformation($"C# Queue trigger function processed: {myQueueItem}");
         }
