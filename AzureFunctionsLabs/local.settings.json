@@ -6,9 +6,9 @@
     "queueconnectionstring": "UseDevelopmentStorage=true",
     "queuename": "messages",
     "blobconnectionstring": "UseDevelopmentStorage=true",
-    "ComputeLinesNumber": "true",
-    "ShowLenght": "true",
-    "LogDateTimeUTC": "true",
+    "ComputeLinesNumber": true,
+    "ShowLenght": true,
+    "LogDateTimeUTC": true,
     "SecondToWaitBeforeTrigger": 10
   }
 }
