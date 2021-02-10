@@ -49,6 +49,10 @@ namespace AzureFunctionsLabs
                         LogDateTimeUTC = Convert.ToBoolean(config["LogDateTimeUTC"]),
                     }
                 );
+
+            builder.Services.AddSingleton<TimerTriggerDTO>(
+                 s => new TimerTriggerDTO()
+                );
         }
     }
 }
