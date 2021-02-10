@@ -30,9 +30,15 @@ namespace AzureFunctionsLabs
         {
             // { "FreeText" :"Hello World from PostMan API"}
 
+            log.LogInformation($"CONFIGURATION DI QueueName --> {_configuration.QueueName}");
+
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 
+            log.LogInformation($"INPUT requestBody --> {requestBody}");
+
             DateTime runAt = DateTime.UtcNow.AddSeconds(_configuration.SecondToWaitBeforeTrigger);
+
+            log.LogInformation($"RunAt --> {runAt}");
 
             // Add Message to Queue --> use in QueueTriggerDIFunction
             CloudQueueMessage message = new CloudQueueMessage(requestBody);
@@ -58,7 +64,12 @@ namespace AzureFunctionsLabs
                 operationContext
                 );
 
-            return new OkObjectResult(message.Id);
+            var result = new
+            {
+                Id = message.Id,
+            };
+
+            return new OkObjectResult(result);
         }
     }
 }
