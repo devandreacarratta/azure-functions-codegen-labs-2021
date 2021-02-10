@@ -24,6 +24,7 @@ namespace AzureFunctionsLabs
             ILogger log)
         {
             log.LogInformation("HTTPTriggerGETDIFunction works");
+
             await Task.Delay(1000); // do something ....
 
             if (_configuration.LogDateTimeUTC)
