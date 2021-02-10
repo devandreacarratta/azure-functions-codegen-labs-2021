@@ -4,8 +4,8 @@ using System.Text;
 
 namespace AzureFunctionsLabs.DTO
 {
-    public class QueueMessageDTO
+    public class HTTPTriggerDTO
     {
-        public string FreeText { get; set; }
+        public bool LogDateTimeUTC { get; set; }
     }
 }
