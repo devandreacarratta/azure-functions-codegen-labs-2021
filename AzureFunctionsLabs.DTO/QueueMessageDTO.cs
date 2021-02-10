@@ -8,4 +8,5 @@ namespace AzureFunctionsLabs.DTO
     {
         public string FreeText { get; set; }
     }
+
 }
