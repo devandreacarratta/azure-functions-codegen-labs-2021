@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "912fcc8d-47a7-40fb-bcf7-a52b8681001f",
+		"name": "CodeGen 2021",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello World",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{host}}/api/HelloCodeGen2021",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"HelloCodeGen2021"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTTPTriggerGETDIFunction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{host}}/api/HTTPTriggerGETDIFunction?code={{func-code}}",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"HTTPTriggerGETDIFunction"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "{{func-code}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTTPTriggerPostDIFunction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"FreeText\" :\"Hello World from PostMan API\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/HTTPTriggerPostDIFunction?code={{func-code}}",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"HTTPTriggerPostDIFunction"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "{{func-code}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTTPTriggerThrowingAnException",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{host}}/api/HTTPTriggerThrowingAnException?code={{func-code}}",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"HTTPTriggerThrowingAnException"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "{{func-code}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
