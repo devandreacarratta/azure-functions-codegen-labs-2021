@@ -17,6 +17,7 @@ Per la sessione utilizzeremo Azure Functions Serverless scritte in C# NetCore.
 
 - [AndreaCarratta@Linkedin](http://bit.ly/linkedin-acarratta)
 - [AndreaCarratta@YouTube](https://bit.ly/devandreacarratta-youtube)
+- [AndreaCarratta@Twitch](http://bit.ly/twitch-devandreacarratta)
 - [DevAndreaCarratta@Linkedin](http://bit.ly/linkedin-devandreacarratta)
 - [DevAndreaCarratta@Facebook](http://bit.ly/devandreacarratta-facebook)
 - [DevAndreaCarratta@Telegram](http://bit.ly/telegram-devandreacarratta)
