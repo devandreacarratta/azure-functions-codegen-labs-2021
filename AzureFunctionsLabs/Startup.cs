@@ -23,6 +23,8 @@ namespace AzureFunctionsLabs
                 .AddEnvironmentVariables()
                 .Build();
 
+            builder.Services.AddSingleton<HelperService>();
+
             builder.Services.AddSingleton<QueueConfigurationDTO>
                 (
                     s => new QueueConfigurationDTO()

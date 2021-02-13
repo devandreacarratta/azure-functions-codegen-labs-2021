@@ -9,18 +9,21 @@ namespace AzureFunctionsLabs.HTTPTrigger
 {
     public class HTTPTriggerThrowingAnException
     {
-        public HTTPTriggerThrowingAnException()
+        private readonly HelperService _helper = null;
+
+        public HTTPTriggerThrowingAnException(HelperService helper)
         {
+            _helper = helper;
         }
 
         [FunctionName("HTTPTriggerThrowingAnException")]
-        public static async Task Run(
+        public async Task Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
             await Task.Delay(1);
 
-            throw new Exception("Ops, We have a problema!");
+            _helper.GenerateNewException("Ops, We have a problema!");
         }
     }
 }
