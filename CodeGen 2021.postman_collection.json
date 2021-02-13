@@ -50,6 +50,31 @@
 			"response": []
 		},
 		{
+			"name": "HTTPTriggerGETHelperService",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{host}}/api/HTTPTriggerGETHelperService?code={{func-code}}",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"HTTPTriggerGETHelperService"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "{{func-code}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "HTTPTriggerPostDIFunction",
 			"request": {
 				"method": "POST",
