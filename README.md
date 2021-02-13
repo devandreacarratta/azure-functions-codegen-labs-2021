@@ -4,6 +4,8 @@ Sessione introduttiva sulle Azure Functions per capire come utilizzarle al megli
 
 Per la sessione utilizzeremo Azure Functions Serverless scritte in C# NetCore.
 
+- [VIDEO SESSIONE LIVE SU YOUTUBE](https://youtu.be/ScDWBlSsWho) 
+
 ## Contenuti della sessione:
 
 - Overview	
