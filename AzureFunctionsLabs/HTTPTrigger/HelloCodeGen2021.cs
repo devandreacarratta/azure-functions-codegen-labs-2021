@@ -5,7 +5,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
-namespace AzureFunctionsLabs.HTTPTrigger
+namespace AzureFunctionsLabs
 {
     public class HelloCodeGen2021
     {
